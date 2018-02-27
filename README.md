@@ -20,6 +20,15 @@ def deps do
 end
 ```
 
+If vendoring using git submodule:
+
+```elixir
+
+def deps do
+  [{:ostip_exari, path: "./ostip_exari/swagger/client"}]
+end
+```
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/swagger/client](https://hexdocs.pm/swagger/client).
