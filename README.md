@@ -12,11 +12,11 @@ You can run the latest Asterisk version via Docker Compose using the provided do
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `swagger/client` to your list of dependencies in `mix.exs`:
+by adding `ostip_exari` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:swagger/client, "~> 0.1.0"}]
+  [{:ostip_exari, "~> 0.1.0"}]
 end
 ```
 
