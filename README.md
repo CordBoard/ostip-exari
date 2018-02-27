@@ -1,6 +1,7 @@
 # Swagger.Client
 
 ** In order to keep up to date, run swagger-codegen against latest Asterisk **
+You can run the latest Asterisk version via Docker Compose using the provided docker-compose.yml file and the configs located under the asterisk folder. These configs set the default username and password to asterisk:asterisk for testing and updating specs for new versions.
 
 `swagger-codegen generate -i http://192.168.64.2:8088/ari/api-docs/resources.json -l elixir -o /tmp/test/ -a "Authorization: Basic YXN0ZXJpc2s6YXN0ZXJpc2s="`
 
