@@ -50,7 +50,7 @@ defmodule Swagger.Client.Mixfile do
       name: "ostip_exari",
       # These are the default files included in the package
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
-      organization: "OSTIP",
+      # organization: "ostip", # didn't realize that made it private!
       maintainers: ["Justin Zimmer"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/CordBoard/ostip_exari"}
