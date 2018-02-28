@@ -11,7 +11,8 @@ defmodule Swagger.Client.Mixfile do
      description: description(),
      package: package(),
      name: "OSTIP_EXARI",
-     source_url: "https://github.com/CordBoard/ostip_exari"]
+     source_url: "https://github.com/CordBoard/ostip_exari",
+     homepage_url: "https://www.ostip.org"]
   end
 
   # Configuration for the OTP application
@@ -48,6 +49,7 @@ defmodule Swagger.Client.Mixfile do
       name: "ostip_exari",
       # These are the default files included in the package
       files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      organization: "OSTIP",
       maintainers: ["Justin Zimmer"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/CordBoard/ostip_exari"}
