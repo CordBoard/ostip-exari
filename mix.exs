@@ -35,7 +35,8 @@ defmodule Swagger.Client.Mixfile do
   defp deps do
     [
       {:tesla, "~> 0.8"},
-      {:poison, ">= 1.0.0"}
+      {:poison, ">= 1.0.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
@@ -48,7 +49,7 @@ defmodule Swagger.Client.Mixfile do
       # This option is only needed when you don't want to use the OTP application name
       name: "ostip_exari",
       # These are the default files included in the package
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
       organization: "OSTIP",
       maintainers: ["Justin Zimmer"],
       licenses: ["Apache 2.0"],
