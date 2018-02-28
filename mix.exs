@@ -7,7 +7,11 @@ defmodule Swagger.Client.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     deps: deps(),
+     description: description(),
+     package: package(),
+     name: "OSTIP_EXARI",
+     source_url: "https://github.com/CordBoard/ostip_exari"]
   end
 
   # Configuration for the OTP application
@@ -31,6 +35,22 @@ defmodule Swagger.Client.Mixfile do
     [
       {:tesla, "~> 0.8"},
       {:poison, ">= 1.0.0"}
+    ]
+  end
+
+  defp description() do
+    "This is a Swagger Codegen generated library for the Asterisk RESTful Interface (ARI). This is maintained by the Open Source Telephony Integration Project as a dependency for it's projects."
+  end
+
+  defp package() do
+    [
+      # This option is only needed when you don't want to use the OTP application name
+      name: "ostip_exari",
+      # These are the default files included in the package
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      maintainers: ["Justin Zimmer"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/CordBoard/ostip_exari"}
     ]
   end
 end
